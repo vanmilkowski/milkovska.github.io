@@ -1,0 +1,156 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+footer{
+    text-align: center;
+}
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+}
+.navbar {
+	font-size: 16.px;
+	width: 85.5%;
+	margin: auto;
+	padding: 35px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 200px;
+	cursor: pointer;
+}
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 38px;
+	position: relative;
+}
+.navbar ul li a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+.navbar ul li::after {
+	content: "";
+	height: 3px;
+	width: 0;
+	background: #9cc6b2;
+	position: absolute;
+	left: 0;
+	bottom: -8px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after {
+	width: 100%;
+}
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+.button {
+	width: 300px;
+	height: 60px;
+	border: none;
+	padding-left: 20px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+	border-radius: 10px;
+	box-shadow: inset 0 0 0 0 #9cc6b2;
+	transition: ease-out 0.3s;
+	font-size: 21px;
+	outline: none;
+	margin-top: -838px;
+	margin-left: -300px;
+}
+.button:hover {
+	box-shadow: inset 300px 0 0 0 #9cc6b2;
+	cursor: pointer;
+	color: rgb(0, 0, 0);
+}
+.content {
+	margin-top: 10%;
+	max-width: 600px;
+	margin-left: 120px;
+}
+.content h1 {
+	font-size: 70px;
+	color: #222;
+	margin-top: 11.9px;
+    margin-bottom: -30.1px;
+}
+.content p {
+	font-size: 19px;
+	margin: 50px 0px 30px;
+	font-weight: 300;
+}
+.anim {
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 1s linear forwards;
+}
+.int{
+    margin-top: -20px;
+}
+@keyframes moveup {
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.img {
+	height: 82vh;
+	width: 705px;
+    position: absolute;
+    bottom: 36px;
+    right: 9.5%;
+	background-image: url(/slajdy/1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 5s;
+
+	animation-name: animate;
+	animation-direction: alternate-reverse;
+	animation-play-state: running;
+	animation-timing-function: ease-in-out;
+	animation-duration: 30s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-image: url(/slajdy/1.jpg);
+	}
+	20% {
+		background-image: url(/slajdy/2.jpg);
+	}
+	40% {
+		background-image: url(/slajdy/3.PNG);
+	}
+	60% {
+		background-image: url(/slajdy//4.jpg);
+	}
+	80% {
+		background-image: url(/slajdy/1.jpg);
+	}
+	100% {
+		background-image: url(/slajdy/2.jpg);
+	}
+}
+.left-col, .right-col{
+    flex-basis: 50%;
+    height: 100vh;
+    position: relative;
+}

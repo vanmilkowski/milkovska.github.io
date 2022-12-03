@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../home/style.css" />
+		<script
+			src="https://kit.fontawesome.com/2b871ef754.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Poppins:wght@400;700&family=Questrial&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Milkovska</title>
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<div class="milkovska"><a href="../home/index.html"><p>milkovska</p></a></div>
+				<div class="nav-links" id="navLinks">
+					<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="../home/index.html">HOME</a></li>
+						<li><a href="../o mnie/about.html">O MNIE</a></li>
+						<li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+						<li><a href="../oferta/oferta.html">OFERTA</a></li>
+						<li><a href="../kontakt/kontakt.html">KONTAKT</a></li>
+						<li>
+							<a href="https://www.instagram.com/milkovska.dsgn/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<main>
+				<div class="about-me-photo">
+					<img src="/o mnie/bk-D119-BS-beż-jasny.jpg" class="back-img" alt="beżowe tło">
+					<img src="./zdj oli.png" class="main-img" alt="na zdjęciu Aleksandra Miłkowska">
+				</div>
+				<div class="about-me-text">
+					<h1> O MNIE</h1>
+					<h2>Lorem ipsum dolor sit amet <br> consectetur lorem srorem.</h2>
+					<p> Projektuję wnętrza Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis deleniti, quo quas vitae hic quisquam saepe fugiat recusandae tempora quae, cumque nam, ut non exercitationem sunt optio obcaecati eveniet tenetur ratione! Vero, inventore obcaecati? Eius, ex incidunt adipisci, numquam asperiores officia ad quaerat beatae culpa cupiditate in eum corrupti reprehenderit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, obcaecati doloribus. A repellendus quae vitae pariatur debitis at numquam velit laborum qui, neque, sapiente ullam quas quasi aliquam. A, modi unde facere eius vero officiis sunt quibusdam et quam, commodi, obcaecati maiores optio saepe adipisci harum mollitia autem alias iure!Projektuję wnętrza Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis deleniti, quo quas vitae hic quisquam saepe fugiat recusandae tempora quae, cumque nam, ut non exercitationem sunt optio obcaecati eveniet tenetur ratione! Vero, inventore obcaecati? Eius, ex incidunt adipisci, numquam asperiores officia ad quaerat beatae culpa cupiditate in eum corrupti reprehenderit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, obcaecati doloribus. A repellendus quae vitae pariatur debitis at numquam velit laborum qui, neque, sapiente ullam quas quasi aliquam. A, modi unde facere eius vero officiis sunt quibusdam et quam, commodi, obcaecati maiores optio saepe adipisci harum mollitia autem alias iure!</p>
+				</div>
+				
+			</main>
+		</section>
+		<!------------------- Footer ---------------->
+<div class="footer">
+	<!-- <div class="ft">
+		<p>MILKOWSKA</p>
+		<p>projekty wnętrz</p>
+	</div>
+	<div class="ft"><a href="mailto:aleksandrakosmicka@gmail.com">aleksandrakosmicka@gmail.com</a></div>
+	<div class="ft"><a href="tel:+48536356025">tel +48 726 153 329</a></div> -->
+	
+		  <table>
+			<tbody>
+				<td>© 2022 MILKOVSKA projekty wnętrz<br>
+					Wszystkie prawa zastrzeżone <br><br>
+				Projekt strony Łukasz Miłkowski</td>
+			</tbody>
+		  </table>
+</div>
+		<!-- ------JavaScript for Toggle Menu------>
+		<script>
+			var navLinks = document.getElementById('navLinks');
+			function showMenu() {
+				navLinks.style.right = '0';
+			}
+			function hideMenu() {
+				navLinks.style.right = '-200px';
+			}
+		</script>
+	</body>
+</html>

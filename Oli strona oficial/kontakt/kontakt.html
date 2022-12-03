@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../home/style.css" />
+		<link rel="stylesheet" href="./slide.scss" />
+		<script
+			src="https://kit.fontawesome.com/2b871ef754.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Montserrat:wght@400;700&family=Nunito:wght@400;700&family=Poppins:wght@400;700&family=Questrial&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Milkovska</title>
+	</head>
+	<body>
+		<section class="header">
+			<nav>
+				<div class="milkovska">
+					<a href="../home/index.html"><p>milkovska</p></a>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="../home/index.html">HOME</a></li>
+						<li><a href="../o mnie/about.html">O MNIE</a></li>
+						<li><a href="../portfolio/portfolio.html">PORTFOLIO</a></li>
+						<li><a href="../oferta/oferta.html">OFERTA</a></li>
+						<li><a href="../kontakt/kontakt.html">KONTAKT</a></li>
+						<li>
+							<a
+								href="https://www.instagram.com/milkovska.dsgn/"
+								target="_blank"
+								><i class="fa-brands fa-instagram"></i
+							></a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+			</nav>
+			<main>
+				<div class="container-contact">
+					<h1>Skontakuj się ze mną</h1>
+					<p>
+						Jeśli chcesz podjąć ze mną współpracę lub masz więcej pytań, poniżej są dane kontaktowe oraz formularz kontaktowy. <br> Odpowiem na wszelkie zapytania najszybciej, jak to możliwe.
+					</p>
+					<div class="contact-box">
+						<div class="left">
+							<h3>Formularz kontaktowy</h3>
+							<form action="./contactform.php" method="post">
+								<div class="input-row">
+									<div class="input-group">
+										<p>imię</p>
+										<input type="text" name="name" placeholder="Jan" />
+									</div>
+									<div class="input-group">
+										<p>nazwisko</p>
+										<input type="text" name="surname" placeholder="Kowalski" />
+									</div>
+								</div>
+								<div class="input-row">
+									<div class="input-group">
+										<p>email</p>
+										<input type="text" name="mail" placeholder="jan@gmail.com" />
+									</div>
+									<div class="input-group">
+										<p>telefon</p>
+										<input type="text" name="telephone" placeholder="+48 555 666 777" />
+									</div>
+								</div>
+                                <textarea rows="5" name="message" placeholder="twoja wiadomość"></textarea>
+                                <button type="submit" name="submit">wyślij</button>
+							</form>
+						</div>
+						<div class="right">
+							<h3>Dane kontaktowe</h3>
+                            <table>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td>milkovska@o2.pl</td>
+                                </tr>
+                                <tr>
+                                    <td>Telefon</td>
+                                    <td>+48 536 356 025</td>
+                                </tr>
+                                <tr>
+                                    <td>Lokalizacja</td>
+                                    <td>Poznań</td>
+                                </tr>
+                            </table>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="contact-row1">
+					<h1>kontakt</h1>
+					<br />
+					<h2>Zacznijmy nowy projekt</h2>
+					<p>
+						Czekam na waszą wiadomość Lorem ipsum dolor sit amet consectetur,
+						adipisicing elit. Dolorum placeat ipsum commodi atque repellat ad!
+					</p>
+					<br /><br />
+					<h3>
+						<i class="fa-solid fa-phone"></i> <a href="tel:+48536356025"> +48 536 356 025</a><br /><i class="fa-solid fa-envelope"></i>
+						<a href="mailto:milkovska@o2.pl">milkovska@o2.pl</a>
+					</h3>
+				</div>
+				<div class="contact-row2">
+								
+					<input type="text" class="field" placeholder="imię">
+					<input type="email" class="field" placeholder="email">
+					<input type="text" class="field" placeholder="numer telefonu">
+                    <textarea class="field" placeholder="napisz mi wiadomość"></textarea>
+					
+				</div> -->
+			</main>
+		</section>
+		<!------------------- Footer ---------------->
+		<div class="footer">
+			<!-- <div class="ft">
+		<p>MILKOWSKA</p>
+		<p>projekty wnętrz</p>
+	</div>
+	<div class="ft"><a href="mailto:aleksandrakosmicka@gmail.com">aleksandrakosmicka@gmail.com</a></div>
+	<div class="ft"><a href="tel:+48536356025">tel +48 726 153 329</a></div> -->
+
+			<table>
+				<tbody>
+					<td>
+						© 2022 MILKOVSKA projekty wnętrz<br />
+						Wszystkie prawa zastrzeżone <br /><br />
+						Projekt strony Łukasz Miłkowski
+					</td>
+				</tbody>
+			</table>
+		</div>
+		<!-- ------JavaScript for Toggle Menu------>
+		<script>
+			var navLinks = document.getElementById('navLinks');
+			function showMenu() {
+				navLinks.style.right = '0';
+			}
+			function hideMenu() {
+				navLinks.style.right = '-200px';
+			}
+		</script>
+        <!-- <script src="./script.js"></script> -->
+	</body>
+</html>
